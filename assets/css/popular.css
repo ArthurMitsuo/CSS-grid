@@ -1,0 +1,40 @@
+.popular{
+    padding: 3rem 0;
+}
+
+.popular__content{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: card-content;
+
+}
+
+.popular__card{
+    background: #fdfdfd;
+    display: grid;
+    grid-template-areas:
+        "card-image"
+        "card-body";
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+    margin-right: 1rem;
+    width: calc(20% - 1rem);
+}
+
+.popular__card___image{
+    grid-area: card-image;
+    height: 100%;
+    width: 100%;
+}
+
+.popular__card___body{
+    display: grid;
+    grid-area: card-body;
+    grid-row-gap: .5rem;
+    grid-template-areas:
+        "card-header"
+        "card-content";
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
