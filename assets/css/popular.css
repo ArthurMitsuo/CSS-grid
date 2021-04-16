@@ -1,5 +1,5 @@
 .popular{
-    padding: 3rem 0;
+    padding: 3rem 2rem;
 }
 
 .popular__content{
@@ -21,6 +21,10 @@
     width: calc(20% - 1rem);
 }
 
+.popular__card:last-child{
+    margin-right: 0;
+}
+
 .popular__card___image{
     grid-area: card-image;
     height: 100%;
@@ -38,3 +42,39 @@
     padding: .75rem;
 }
 
+.popular__card___title{
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.popular__card___date{
+    color:#808080;
+    font-size: .9rem;
+}
+
+.popular__card___description{
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.popular__title{
+    font-weight: 500;
+}
+
+.popular__icon{
+    margin-right: .25rem;
+}
+
+.popular__header{
+    border-bottom: 1px solid #dcdcdc;
+    display:flex;
+    justify-content:space-between;
+}
+
+.popular__button{
+    background: transparent;
+    border: none;
+    color: #333333;
+}
