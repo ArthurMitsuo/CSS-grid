@@ -7,7 +7,7 @@
         "main"
         "footer";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
 }
 
 .header {
@@ -19,8 +19,14 @@
  
 .main {
     grid-area: main;
+    padding: 0 2rem;
 }
 
 .footer {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
     grid-area: footer;
+    padding: 1rem;
+    text-align: center;
 }
