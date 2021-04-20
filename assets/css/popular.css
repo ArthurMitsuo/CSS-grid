@@ -16,9 +16,6 @@
         "card-image"
         "card-body";
     grid-template-columns: 100%;
-    grid-template-rows: 173px auto;
-    margin-right: 1rem;
-    width: calc(20% - 1rem);
 }
 
 .popular__card:last-child{

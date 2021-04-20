@@ -23,6 +23,16 @@
         grid-column: none;
         grid-row:none;
     }
+
+    .popular__content{
+        flex-direction: column;
+    }
+    .popular__card{
+        grid-template-rows: 150px auto;
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -53,12 +63,27 @@
     .highlights__categories{
         grid-column: 1 / 3;
     }
+
+    .popular__content{
+        flex-direction: row;
+    }
+    .popular__card{
+        grid-template-rows: 173px auto;
+        width: calc(50% - 1rem);
+        margin-right: 1rem;
+    }
+    
 }
 
 @media screen and (min-width: 992px) {
-
+    .popular__card{
+        width: calc(33.33% - 1rem);
+    }
 }
 
 @media screen and (min-width: 1200px) {
-     
+    .popular__card{
+        width: calc(20% - 1rem);
+        margin-bottom: 0;
+    }
 }
